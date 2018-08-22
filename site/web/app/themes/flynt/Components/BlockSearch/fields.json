@@ -1,0 +1,15 @@
+{
+  "translatableOptions": [
+
+  ],
+  "globalOptions": [
+
+  ],
+  "layout": {
+    "name": "blockSearch",
+    "label": "Block Search",
+    "sub_fields": [
+      
+    ]
+  }
+}

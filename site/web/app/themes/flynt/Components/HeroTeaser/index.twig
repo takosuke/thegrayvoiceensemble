@@ -1,0 +1,13 @@
+<div class="flyntComponent" is="flynt-hero-teaser">
+	<div class="heroTeaser">
+		<div class="heroTeaser-wrapper">
+			<h2 class="teaser-headline">{{ headline }}</h2>
+			<p class="teaser-subline">{{ subline }}</p>
+			{% if actionUrl and actionText %}
+				<div class="teaser-action">
+					<a href="{{ actionUrl }}" class="btn">{{ actionText }}</a>
+				</div>
+			{% endif %}
+		</div>
+	</div>
+</div>

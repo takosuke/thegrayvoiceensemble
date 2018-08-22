@@ -1,0 +1,69 @@
+$colorBackground = lookup('$globalColorBackground') || #fff
+$colorLink = lookup('$globalColorLink') || #254fc7
+$colorHeadline = lookup('$globalColorHeadline') || #153cab
+$colorText = lookup('$globalColorText') || #153cab
+
+.flyntComponent[is='flynt-document-default']
+  body
+    background-color: $colorBackground
+    color: $colorText
+    font-family: $fontFamily
+    font-size: ($baseFontSize / 16px) em 
+    line-height: ($baseLineHeight / $baseFontSize) em
+    font-weight: normal
+    text-rendering: optimizeLegibility
+    -webkit-font-smoothing: antialiased
+    -moz-osx-font-smoothing: grayscale
+    
+  h1, .h1,
+  h2, .h2,
+  h3, .h3,
+  h4, .h4,
+  h5, .h5
+  h6, .h6
+    color: $colorHeadline
+    font-weight: normal    
+    
+  h1, .h1
+    remFontSize(40px)
+
+  h2, .h2
+    remFontSize(30px)
+
+  h3, .h3        
+    remFontSize(25px)
+
+  h4, .h4          
+    remFontSize(18px)
+
+  h5, .h5       
+    remFontSize(16px)
+
+  h6, .h6              
+    remFontSize(14px)
+
+  p, .paragraph
+    margin: 0 0 15px
+
+  a, .link
+    color: $colorLink
+    text-decoration: none
+    
+    &:focus,
+    &:active
+      box-shadow: none
+      outline: 0
+
+    &:hover
+      color: $colorLink
+      text-decoration: underline
+      
+  blockquote
+    font-weight: italic
+    
+  cite
+    remFontSize(12px)
+    font-style: normal
+    
+  small
+    remFontSize(12px)

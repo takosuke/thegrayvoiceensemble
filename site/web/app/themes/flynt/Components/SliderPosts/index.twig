@@ -1,0 +1,12 @@
+<div is="flynt-slider-posts" class="flyntComponent">
+  <div class="sliderPosts sliderPosts-isHidden">
+    <ul class="sliderPosts-slides">
+      {% for post in posts %}
+        <li class="sliderPosts-slide">
+          {% include 'Partials/Image/index.twig' %}
+          {% include 'Partials/SlideContent/index.twig' %}
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
+</div>

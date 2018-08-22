@@ -1,0 +1,23 @@
+
+$rupture.scale = lookup('$globalLayoutScale') || (0 576px 768px 992px 1200px)
+$rupture.anti-overlap = lookup('$globalLayoutOverlap') || -1px
+$gutterWidth = lookup('$globalLayoutGutterWidth') || 1.5
+$containerPadding = lookup('$globalLayoutContainerPadding') || 15px
+$containerMaxWidth = lookup('$globalLayoutContainerMaxWidth') || 1140px
+
+.flyntComponent[is="flynt-block-twitter"]
+  *,
+  *:before,
+  *:after
+    box-sizing: border-box
+
+  .blockTwitter
+    center($containerMaxWidth, $globalContainerPadding)
+    margin-bottom: $containerPadding
+    
+    @import 'Partials/Tweets/_style'
+    
+    &-list
+      padding: 0
+      margin: 0
+

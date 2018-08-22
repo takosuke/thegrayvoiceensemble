@@ -1,0 +1,35 @@
+@import '../DocumentDefault/BaseStyles/Mixins/_button'
+
+$rupture.scale = lookup('$globalRuptureScale') || (0 575px 767px 991px 1199px)
+$rupture.anti-overlap = lookup('$globalRuptureAntiOverlap') || -1px
+$gutterWidth = lookup('$globalGutterWidth') || 15px
+$containerMaxWidth = lookup('$globalContainerMaxWidth') || 1140px
+$containerPadding = lookup('$globalContainerPadding') || 15px
+
+.flyntComponent[is='flynt-block-search']
+  *,
+  *:before,
+  *:after
+    box-sizing: border-box
+
+  .blockSearch
+    @import '../DocumentDefault/BaseStyles/Mixins/_remFontSize'
+    center($containerMaxWidth, $containerPadding)
+    margin-bottom: $containerPadding
+    
+    display: flex
+    justify-content: center
+    align-items: center
+    // code
+    input, button
+      margin: 0
+      height: 40px
+      border: 1px solid #ddd
+    
+    button
+      border-left: none
+    
+    &-form
+      float: left
+      position: relative
+      

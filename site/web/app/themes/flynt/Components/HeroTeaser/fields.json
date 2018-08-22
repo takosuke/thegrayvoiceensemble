@@ -1,0 +1,81 @@
+{
+  "translatableOptions": [
+
+  ],
+  "globalOptions": [
+
+  ],
+  "layout": {
+    "name": "heroTeaser",
+    "label": "Hero: Teaser",
+    "sub_fields": [
+      {
+          "label": "Headline",
+          "name": "headline",
+          "type": "text",
+          "instructions": "",
+          "required": 1,
+          "wrapper": {
+              "width": "",
+              "class": "",
+              "id": ""
+          },
+          "default_value": "",
+          "placeholder": "",
+          "prepend": "",
+          "append": "",
+          "maxlength": ""
+      },
+      {
+          "label": "Subline",
+          "name": "subline",
+          "type": "text",
+          "instructions": "",
+          "required": 1,
+          "wrapper": {
+              "width": "",
+              "class": "",
+              "id": ""
+          },
+          "default_value": "",
+          "placeholder": "",
+          "prepend": "",
+          "append": "",
+          "maxlength": ""
+      },
+      {
+          "label": "Action Url",
+          "name": "actionUrl",
+          "type": "text",
+          "instructions": "",
+          "required": 0,
+          "wrapper": {
+              "width": "",
+              "class": "",
+              "id": ""
+          },
+          "default_value": "",
+          "placeholder": "",
+          "prepend": "",
+          "append": ""
+      },
+      {
+          "label": "Action Text",
+          "name": "actionText",
+          "type": "text",
+          "instructions": "",
+          "required": 0,
+          "wrapper": {
+              "width": "",
+              "class": "",
+              "id": ""
+          },
+          "default_value": "",
+          "placeholder": "",
+          "prepend": "",
+          "append": "",
+          "maxlength": ""
+      }
+    ]
+  }
+}

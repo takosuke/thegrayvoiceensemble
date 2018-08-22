@@ -1,0 +1,38 @@
+@import '../DocumentDefault/BaseStyles/Mixins/_remFontSize'
+
+$rupture.scale = lookup('$globalLayoutScale') || (0 576px 768px 992px 1200px)
+$rupture.anti-overlap = lookup('$globalLayoutOverlap') || -1px
+$gutterWidth = lookup('$globalLayoutGutterWidth') || 1.5
+$containerPadding = lookup('$globalLayoutContainerPadding') || 15px
+$containerMaxWidth = lookup('$globalLayoutContainerMaxWidth') || 1140px
+
+.flyntComponent[is="flynt-hero-teaser"]
+  *,
+  *:before,
+  *:after
+    box-sizing: border-box
+
+  .heroTeaser
+    center($containerMaxWidth, $globalContainerPadding)
+    margin-bottom: $globalContainerPadding
+    
+    &-wrapper
+      background: $globalColorBrand
+      text-align: center
+      padding: 55px 0
+
+    .teaser-headline, .teaser-subline
+      color: #fff
+      -webkit-margin-before: 0
+
+    .teaser-headline
+      remFontSize(34px)
+
+    .teaser-subline
+      remFontSize(24px)
+      -webkit-margin-after: 0
+
+    .teaser-action
+      display: block
+      text-align: center
+      margin-top: $globalContainerPadding

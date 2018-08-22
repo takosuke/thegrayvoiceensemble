@@ -1,0 +1,41 @@
+{
+  "name": "pageComponents",
+  "title": "Page Components",
+  "fields": [
+    {
+      "name": "pageComponents",
+      "label": "Page Components",
+      "type": "flexible_content",
+      "button_label": "Add Component",
+      "layouts": [
+        "Flynt/Components/BlockImage/Fields/Layout",
+        "Flynt/Components/BlockMediaText/Fields/Layout",
+        "Flynt/Components/BlockRelatedPosts/Fields/Layout",
+        "Flynt/Components/BlockSearch/Fields/Layout",
+        "Flynt/Components/BlockTestimonial/Fields/Layout",
+        "Flynt/Components/BlockTwitter/Fields/Layout",
+        "Flynt/Components/BlockVideoOembed/Fields/Layout",
+        "Flynt/Components/BlockWysiwyg/Fields/Layout",
+        "Flynt/Components/HeroTeaser/Fields/Layout",
+        "Flynt/Components/MapGoogle/Fields/Layout",
+        "Flynt/Components/SliderMedia/Fields/Layout",
+        "Flynt/Components/SliderPosts/Fields/Layout",
+        "Flynt/Components/BlockStyleGuid/Fields/Layout"
+      ]
+    }
+  ],
+  "location": [
+    [
+      {
+        "param": "post_type",
+        "operator": "==",
+        "value": "page"
+      },
+      {
+        "param": "page_type",
+        "operator": "!=",
+        "value": "posts_page"
+      }
+    ]
+  ]
+}

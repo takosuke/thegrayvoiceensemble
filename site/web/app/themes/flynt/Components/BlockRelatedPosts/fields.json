@@ -1,0 +1,32 @@
+{
+  "translatableOptions": [
+
+  ],
+  "globalOptions": [
+
+  ],
+  "layout": {
+    "name": "blockRelatedPosts",
+    "label": "Block Related Posts",
+    "sub_fields": [
+      {
+          "label": "Posts count",
+          "name": "posts_count",
+          "type": "range",
+          "instructions": "",
+          "required": 0,
+          "wrapper": {
+              "width": "",
+              "class": "",
+              "id": ""
+          },
+          "default_value": 2,
+          "min": 2,
+          "max": 5,
+          "step": "",
+          "prepend": "",
+          "append": ""
+      }
+    ]
+  }
+}

@@ -1,0 +1,72 @@
+{
+  "translatableOptions": [
+    
+  ],
+  "globalOptions": [
+    {
+        "label": "oauth_access_token",
+        "name": "oauth_access_token",
+        "type": "text",
+        "instructions": "",
+        "required": 0,
+        "wrapper": {
+            "width": "",
+            "class": "",
+            "id": ""
+        },
+        "default_value": "",
+        "placeholder": "",
+        "prepend": "",
+        "append": "",
+        "maxlength": ""
+    },{
+        "label": "oauth_access_token_secret",
+        "name": "oauth_access_token_secret",
+        "type": "text",
+        "instructions": "",
+        "required": 0,
+        "wrapper": {
+            "width": "",
+            "class": "",
+            "id": ""
+        },
+        "default_value": "",
+        "placeholder": "",
+        "prepend": "",
+        "append": "",
+        "maxlength": ""
+    },{
+        "label": "consumer_key",
+        "name": "consumer_key",
+        "type": "text",
+        "instructions": "",
+        "required": 0,
+        "wrapper": {
+            "width": "",
+            "class": "",
+            "id": ""
+        },
+        "default_value": "",
+        "placeholder": "",
+        "prepend": "",
+        "append": "",
+        "maxlength": ""
+    },{
+        "label": "consumer_secret",
+        "name": "consumer_secret",
+        "type": "text",
+        "instructions": "",
+        "required": 0,
+        "wrapper": {
+            "width": "",
+            "class": "",
+            "id": ""
+        },
+        "default_value": "",
+        "placeholder": "",
+        "prepend": "",
+        "append": "",
+        "maxlength": ""
+    }
+  ]
+}

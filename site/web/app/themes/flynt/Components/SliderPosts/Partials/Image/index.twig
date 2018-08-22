@@ -1,0 +1,7 @@
+{% if post.thumbnail %}
+  <div class="thumbnail">
+    <a href="{{ post.link }}">
+      <img src="{{ post.thumbnail.src('featured-large')|resize(980,330) }}" srcset="{{ post.thumbnail.src('featured-small')|resize(490,330) }} 490w, {{ post.thumbnail.src('featured-large')|resize(980,330) }}" alt="{{ post.thumbnail.alt }}"/>
+    </a>
+  </div>
+{% endif %}

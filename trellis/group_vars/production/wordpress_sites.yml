@@ -1,0 +1,32 @@
+# Documentation: https://roots.io/trellis/docs/remote-server-setup/
+# `wordpress_sites` options: https://roots.io/trellis/docs/wordpress-sites
+# Define accompanying passwords/secrets in group_vars/production/vault.yml
+
+wordpress_sites:
+  thegrayvoiceensemble.com:
+    site_hosts:
+      - canonical: thegrayvoiceensemble.com
+        redirects:
+          - www.thegrayvoiceensemble.com
+    local_path: ../site # path targeting local Bedrock site directory (relative to Ansible root)
+    repo: git@github.com:example/example.com.git # replace with your Git repo URL
+    repo_subtree_path: site # relative path to your Bedrock/WP directory in your repo
+    branch: master
+    multisite:
+      enabled: false
+    ssl:
+      enabled: false
+      provider: letsencrypt
+    cache:
+      enabled: false
+    # htpasswd:
+    #   - name: wp-starter
+    #     password: wp-starter2018
+    # backup:
+    #   enabled: true
+    #   auto: true
+    #   target: s3://host/bucket_name # any location supported by duplicity
+    #   schedule: '0 */12 * * *' # cron time of backups (change this value)
+    #   purge: false # switch to true to enable automatic purging of old backups
+    #   params:
+    #     - 'export S3_USE_SIGV4="True"'

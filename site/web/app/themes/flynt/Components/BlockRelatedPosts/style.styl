@@ -1,0 +1,19 @@
+@import '../DocumentDefault/BaseStyles/Mixins/_remFontSize'
+    
+$rupture.scale = lookup('$globalRuptureScale') || (0 575px 767px 991px 1199px)
+$rupture.anti-overlap = lookup('$globalRuptureAntiOverlap') || -1px
+$containerPadding = lookup('$globalContainerPadding') || 15px
+$gutterWidth = lookup('$globalGutterWidth') || 15px
+$containerMaxWidth = lookup('$globalContainerMaxWidth') || 1140px
+
+.flyntComponent[is="flynt-block-related-posts"]
+  *,
+  *:before,
+  *:after
+    box-sizing: border-box
+    
+  .blockRelatedPosts
+    center($containerMaxWidth, $containerPadding)
+    margin-bottom: $containerPadding
+      
+    @import 'Partials/Post/_style.styl'

@@ -1,0 +1,17 @@
+<div class="post">
+  {% if post.thumbnail %}
+    <a href="{{ post.link }}" class="post-img">
+      <img src="{{ post.thumbnail.src }}" alt="{{ post.thumbnail.alt }}"/>
+    </a>
+  {% endif %}
+  <small class="post-meta">
+    <span>By</span><a href="{{post.author.path}}"> {{ post.author.name }} </a>
+    <span>at</span><time class="post-date" datetime="{{ post.date }}"> {{ post.time }} </time>
+    <span>in</span>
+    {% for category in post.categories %}
+      <a href="{{ category.link }}">{{ category.name }}</a>
+    {% endfor %}
+  </small>
+  <h3><a href="{{ post.link }}">{{ post.title }}</a></h3>
+  <p>{{ post.get_preview(25, true, '', true, '...') }}</p>
+</div>

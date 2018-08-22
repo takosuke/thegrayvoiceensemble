@@ -1,0 +1,12 @@
+<div class="slideContent">
+  <small class="post__meta">
+    <span>By</span><a href="{{post.author.path}}"> {{ post.author.name }} </a>
+    <span>at</span><time class="post__date" datetime="{{ post.date }}"> {{ post.time }} </time>
+    <span>in</span>
+    {% for category in post.categories %}
+      <a href="{{ category.link }}">{{ category.name }}</a>
+    {% endfor %}
+  </small>
+  <h3 class="slideContent__headline"><a href="{{ post.link }}" target="{{ post.target }}">{{ post.title }}</a></h3>
+  <p>{{ post.get_preview(25, true, '', true, '...') }}</p>
+</div>

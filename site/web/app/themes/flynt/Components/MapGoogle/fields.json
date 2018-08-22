@@ -1,0 +1,30 @@
+{
+  "translatableOptions": [
+
+  ],
+  "globalOptions": [
+
+  ],
+  "layout": {
+    "name": "mapGoogle",
+    "label": "Map Google",
+    "sub_fields": [
+      {
+          "label": "location",
+          "name": "location",
+          "type": "google_map",
+          "instructions": "",
+          "required": 0,
+          "wrapper": {
+              "width": "",
+              "class": "",
+              "id": ""
+          },
+          "center_lat": "52.519141",
+          "center_lng": "13.405143",
+          "zoom": "",
+          "height": ""
+      }
+    ]
+  }
+}

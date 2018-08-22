@@ -1,0 +1,55 @@
+$colorBrand = lookup('$globalColorBrand') || #254fc7
+$colorText = lookup('$globalColorText') || #153cab
+
+.flyntComponent[is='flynt-document-default']
+  form
+    width: 100%
+    
+  fieldset
+    border: 0
+    margin: 0
+    padding: 0
+
+  label,
+  input,
+  textarea,
+  select
+    background: #fff
+    border-radius: 0
+    display: inline-block
+    remFontSize(12px)
+    margin-bottom: 10px
+    padding: 10px
+    width: 100%
+  
+  label
+    padding: 0
+    
+  input,
+  textarea,
+  select
+    border: 1px solid #ddd
+    &:focus,
+    &:active
+      box-shadow: none
+      outline: 0
+
+  input[type='submit'],
+  input[type='reset']
+    width: auto
+    cursor: pointer
+    
+  input[type='submit']
+    btn($colorBrand, #fff)
+      
+  input[type='reset']
+    btn()
+
+  input[type='radio'], input[type='checkbox']
+    cursor: pointer
+    height: 14px
+    left: 20px
+    outline: 0
+    padding: 0
+    top: -3px
+    width: 14px

@@ -1,0 +1,33 @@
+{
+  "translatableOptions": [
+
+  ],
+  "globalOptions": [
+
+  ],
+  "layout": {
+    "name": "sliderPosts",
+    "label": "Slider: Posts",
+    "sub_fields": [
+      {
+          "label": "Slider post count",
+          "name": "sliderPostCount",
+          "type": "number",
+          "instructions": "",
+          "required": 0,
+          "wrapper": {
+              "width": "",
+              "class": "",
+              "id": ""
+          },
+          "default_value": 5,
+          "placeholder": "",
+          "prepend": "",
+          "append": "",
+          "min": 1,
+          "max": 5,
+          "step": ""
+      }
+    ]
+  }
+}

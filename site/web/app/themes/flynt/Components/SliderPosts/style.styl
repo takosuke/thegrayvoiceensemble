@@ -1,0 +1,39 @@
+@import '../DocumentDefault/BaseStyles/Mixins/_remFontSize'
+
+$rupture.scale = lookup('$globalRuptureScale') || (0 575px 767px 991px 1199px)
+$rupture.anti-overlap = lookup('$globalRuptureAntiOverlap') || -1px
+$containerPadding = lookup('$globalContainerPadding') || 15px
+$containerMaxWidth = lookup('$globalContainerMaxWidth') || 1140px
+
+fontFace('slick', 'slick', normal, normal, false, '../../vendor/slick/')
+
+.flyntComponent[is='flynt-slider-posts']
+  *,
+  *:before,
+  *:after
+    box-sizing: border-box
+
+  .sliderPosts
+    center($containerMaxWidth, $containerPadding)
+    margin-bottom: $containerPadding
+    
+    opacity: 1
+    position: relative
+    transition: opacity .1s ease-in-out
+
+    &-isHidden
+      opacity: 0
+
+
+    &-slides
+      list-style: none
+      margin: 0
+      padding: 0
+
+    &-slide
+      outline: 0
+      position: relative
+
+    @import '_slickSliderStyling'
+    @import 'Partials/SlideContent/_style'
+    @import 'Partials/Image/_style'

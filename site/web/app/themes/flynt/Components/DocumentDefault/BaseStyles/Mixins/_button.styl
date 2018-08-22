@@ -1,0 +1,25 @@
+btn(bgColor = #eee, textColor = $globalColorText, borderRadius = 0)
+  cursor: pointer
+  border-radius: 0
+  border: 1px solid
+  display: inline-block
+  margin: 0
+  border-radius: borderRadius
+  transition: background-color .3s ease
+  text-decoration: none
+  
+  border-color: bgColor
+  background-color: bgColor
+  color: textColor
+  
+  &:hover
+    background-color: darken(bgColor, 10)
+    text-decoration: none!important
+    color: textColor
+    
+  &:focus,
+  &:active
+    box-shadow: none
+    outline: 0
+    color: textColor
+    

@@ -1,0 +1,67 @@
+{
+  "translatableOptions": [
+
+  ],
+  "globalOptions": [
+
+  ],
+  "layout": {
+    "name": "blockTestimonial",
+    "label": "Block Testimonial",
+    "sub_fields": [
+      {
+        "name": "image",
+        "label": "Image",
+        "type": "image",
+        "mime_types": "jpg,jpeg",
+        "instructions": "Image-Format: JPG.",
+        "required": 1
+      },
+      {
+          "label": "Author Name",
+          "name": "author_name",
+          "type": "text",
+          "instructions": "",
+          "required": 1,
+          "default_value": "",
+          "placeholder": "",
+          "prepend": "",
+          "append": "",
+          "maxlength": ""
+      },
+      {
+          "label": "Author Infos",
+          "name": "author_infos",
+          "type": "text",
+          "instructions": "",
+          "required": 0,
+          "default_value": "",
+          "placeholder": "",
+          "prepend": "",
+          "append": "",
+          "maxlength": ""
+      },
+      {
+          "label": "Image Copyright",
+          "name": "image_copyright",
+          "type": "text",
+          "instructions": "",
+          "required": 0,
+          "default_value": "",
+          "placeholder": "",
+          "prepend": "",
+          "append": "",
+          "maxlength": ""
+      },
+      {
+        "name": "cite",
+        "label": "Cite",
+        "type": "wysiwyg",
+        "delay": 1,
+        "toolbar": "basic",
+        "media_upload": 0,
+        "required": 1
+      }
+    ]
+  }
+}

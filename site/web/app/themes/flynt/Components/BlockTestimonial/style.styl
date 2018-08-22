@@ -1,0 +1,36 @@
+@import '../DocumentDefault/BaseStyles/Mixins/_remFontSize'
+
+$rupture.scale = lookup('$globalRuptureScale') || (0 575px 767px 991px 1199px)
+$rupture.anti-overlap = lookup('$globalRuptureAntiOverlap') || -1px
+$containerPadding = lookup('$globalContainerPadding') || 15px
+$gutterWidth = lookup('$globalGutterWidth') || 15px
+$containerMaxWidth = lookup('$globalContainerMaxWidth') || 1140px
+
+.flyntComponent[is="flynt-block-testimonial"]
+  *,
+  *:before,
+  *:after
+    box-sizing: border-box
+
+  .blockTestimonial
+    @import 'Partials/Author/_style.styl'
+    @import 'Partials/Cite/_style.styl'
+    
+    center($containerMaxWidth, $containerPadding)
+    margin-bottom: $containerPadding
+    
+    +above('s')
+      display: flex
+      justify-content: center
+      align-items: center
+    
+    &-author
+      margin: 0 auto 18px
+      +above('s')
+        flex: 0 0 195px
+        width: 195px
+        margin-right: 35px
+      
+    &-cite
+      +above('s')
+        flex-grow: 1

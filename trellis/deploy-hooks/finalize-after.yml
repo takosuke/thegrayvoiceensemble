@@ -1,0 +1,11 @@
+---
+- block:
+  - name: Install WP language de_DE
+    command: wp core language install de_DE --activate
+    args:
+      chdir: "{{ deploy_helper.current_path }}"
+
+  - name: Update active language
+    command: wp core language update
+    args:
+      chdir: "{{ deploy_helper.current_path }}"

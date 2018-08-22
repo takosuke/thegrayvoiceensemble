@@ -1,0 +1,26 @@
+$colorBrand = lookup('$globalColorBrand') || #254fc7
+$colorText = lookup('$globalColorText') || #153cab
+$colorLink = lookup('$globalColorLink') || #254fc7
+
+[is='flynt-document-default']
+  button, .btn
+    btn()
+    remFontSize(12px)
+    padding: 5px 35px
+    font-weight: 600
+    
+  .btn-link
+    background: none
+    border: 0
+    padding: 0
+    color: $colorLink
+    text-decoration: none
+
+    &:hover
+      color: $colorLink
+      text-decoration: underline
+      background: none
+    
+    &:focus,
+    &:active
+      color: $colorLink

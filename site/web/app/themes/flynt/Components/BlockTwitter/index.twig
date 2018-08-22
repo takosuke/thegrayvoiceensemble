@@ -1,0 +1,13 @@
+<div class="flyntComponent" is="flynt-block-twitter">
+  <div class="blockTwitter">
+    {% if tweets %}
+      <ul class="blockTwitter-list">
+        {% for tweet in tweets %}
+          {% include 'Partials/Tweets/index.twig' %}
+        {% endfor %}
+      </ul>
+    {% else %}
+      <p class="listPosts-noPosts">no tweets</p>
+    {% endif %}
+  </div>
+</div>

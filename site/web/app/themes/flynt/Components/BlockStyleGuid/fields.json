@@ -1,0 +1,15 @@
+{
+  "translatableOptions": [
+
+  ],
+  "globalOptions": [
+
+  ],
+  "layout": {
+    "name": "blockStyleGuid",
+    "label": "Block: StyleGuid",
+    "sub_fields": [
+      
+    ]
+  }
+}
