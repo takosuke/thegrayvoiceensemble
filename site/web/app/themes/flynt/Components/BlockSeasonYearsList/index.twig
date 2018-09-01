@@ -1,0 +1,9 @@
+<div class="flyntComponent" is="flynt-block-season-years-list">
+  <div>
+    {% for item in posts|sort|reverse %}
+        <div>
+          <h1>{{ item.year | date('Y') }}</h1>
+        </div>
+    {% endfor %}
+  </div>
+</div>

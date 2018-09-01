@@ -1,0 +1,15 @@
+{
+  "translatableOptions": [
+
+  ],
+  "globalOptions": [
+
+  ],
+  "layout": {
+    "name": "blockSeasonYearsList",
+    "label": "Block: SeasonYearsList",
+    "sub_fields": [
+      
+    ]
+  }
+}
