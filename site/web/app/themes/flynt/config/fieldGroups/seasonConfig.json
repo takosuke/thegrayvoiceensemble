@@ -1,0 +1,212 @@
+{
+  "name": "seasonsFields",
+  "title": "Seasons Fields",
+  "fields": [
+    {
+        "label": "Year",
+        "name": "year",
+        "type": "date_picker",
+        "instructions": "",
+        "required": 1,
+        "wrapper": {
+            "width": "",
+            "class": "",
+            "id": ""
+        },
+        "display_format": "F Y",
+        "return_format": "Y\/m",
+        "first_day": 1
+    },
+    {
+        "label": "Description",
+        "name": "description",
+        "type": "wysiwyg",
+        "instructions": "A description of the season",
+        "required": 0,
+        "wrapper": {
+            "width": "",
+            "class": "",
+            "id": ""
+        },
+        "default_value": "",
+        "tabs": "text",
+        "toolbar": "full",
+        "media_upload": 0,
+        "delay": 0
+    },
+    {
+        "label": "Font",
+        "name": "font",
+        "type": "select",
+        "instructions": "Please choose one of the preselected fonts.",
+        "required": 1,
+        "wrapper": {
+            "width": "50",
+            "class": "",
+            "id": ""
+        },
+        "choices": {
+            "Avenir Next": "Avenir Next",
+            "Futura": "Futura",
+            "Letter Gothic Std": "Letter Gothic Std",
+            "SignPainter": "SignPainter",
+            "Times New Roman": "Times New Roman"
+        },
+        "default_value": [],
+        "allow_null": 0,
+        "multiple": 0,
+        "ui": 0,
+        "ajax": 0,
+        "return_format": "value",
+        "placeholder": ""
+    },
+    {
+        "label": "Font size",
+        "name": "font_size",
+        "type": "range",
+        "instructions": "Select the font size",
+        "required": 0,
+        "wrapper": {
+            "width": "50",
+            "class": "",
+            "id": ""
+        },
+        "default_value": 14,
+        "min": 5,
+        "max": 150,
+        "step": "",
+        "prepend": "",
+        "append": "pixels"
+    },
+    {
+        "label": "Font color",
+        "name": "font_color",
+        "type": "color_picker",
+        "instructions": "Choose the font color.",
+        "required": 1,
+        "wrapper": {
+            "width": "50",
+            "class": "",
+            "id": ""
+        },
+        "default_value": "#000000"
+    },
+    {
+        "label": "Background color",
+        "name": "background_color",
+        "type": "color_picker",
+        "instructions": "Pick a background color.",
+        "required": 1,
+        "wrapper": {
+            "width": "50",
+            "class": "",
+            "id": ""
+        },
+        "default_value": ""
+    },
+    {
+        "label": "Group photo",
+        "name": "group_photo",
+        "type": "image",
+        "instructions": "Add a group photo to be displayed at the top of the page.",
+        "required": 0,
+        "wrapper": {
+            "width": "",
+            "class": "",
+            "id": ""
+        },
+        "return_format": "array",
+        "preview_size": "thumbnail",
+        "library": "all",
+        "min_width": "",
+        "min_height": "",
+        "min_size": "",
+        "max_width": "",
+        "max_height": "",
+        "max_size": "",
+        "mime_types": ""
+    },
+    {
+        "label": "Gallery photos",
+        "name": "gallery_photos",
+        "type": "gallery",
+        "instructions": "These images will be shown as thumbnails in this season's gallery.",
+        "required": 0,
+        "wrapper": {
+            "width": "",
+            "class": "",
+            "id": ""
+        },
+        "min": "",
+        "max": "",
+        "insert": "append",
+        "library": "all",
+        "min_width": "",
+        "min_height": "",
+        "min_size": "",
+        "max_width": "",
+        "max_height": "",
+        "max_size": "",
+        "mime_types": ""
+    },
+    {
+        "label": "Video",
+        "name": "youtube_video",
+        "type": "url",
+        "instructions": "Add the video for the season.",
+        "required": 0,
+        "wrapper": {
+            "width": "",
+            "class": "",
+            "id": ""
+        },
+        "default_value": "",
+        "placeholder": ""
+    },
+    {
+        "label": "Choir members",
+        "name": "choir_members",
+        "type": "repeater",
+        "instructions": "Add names of the choir members to the season.",
+        "required": 0,
+        "wrapper": {
+            "width": "",
+            "class": "",
+            "id": ""
+        },
+        "collapsed": "",
+        "min": 0,
+        "max": 0,
+        "layout": "table",
+        "button_label": "",
+        "sub_fields": [
+            {
+                "label": "Name",
+                "name": "name",
+                "type": "text",
+                "instructions": "",
+                "required": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            }
+        ]
+    }
+  ],
+  "location": [
+    [
+      {
+        "param": "post_type",
+        "operator": "==",
+        "value": "seasons"
+      }
+    ]
+  ]
+}

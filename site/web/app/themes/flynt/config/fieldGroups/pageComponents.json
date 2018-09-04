@@ -20,7 +20,8 @@
         "Flynt/Components/MapGoogle/Fields/Layout",
         "Flynt/Components/SliderMedia/Fields/Layout",
         "Flynt/Components/SliderPosts/Fields/Layout",
-        "Flynt/Components/BlockStyleGuid/Fields/Layout"
+        "Flynt/Components/BlockStyleGuid/Fields/Layout",
+        "Flynt/Components/BlockSeasonYearsList/Fields/Layout"
       ]
     }
   ],

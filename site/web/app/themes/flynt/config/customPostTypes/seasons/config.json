@@ -2,7 +2,7 @@
   "label": "Season",
   "singular_label": "Season",
   "description": "A season of the choir",
-  "public": false,
+  "public": true,
   "show_ui": true,
   "show_in_nav_menus": false,
   "show_in_rest": false,
