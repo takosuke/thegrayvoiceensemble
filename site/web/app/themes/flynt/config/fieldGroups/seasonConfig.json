@@ -14,7 +14,7 @@
             "id": ""
         },
         "display_format": "F Y",
-        "return_format": "Y\/m",
+        "return_format": "Y",
         "first_day": 1
     },
     {
