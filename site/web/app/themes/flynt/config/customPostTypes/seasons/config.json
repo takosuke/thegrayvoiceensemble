@@ -10,5 +10,8 @@
     "menu_name": "Seasons",
     "all_items": "All seasons",
     "add_new": "Add new season"
-  }
+  },
+  "supports": [
+  "title"
+]
 }
