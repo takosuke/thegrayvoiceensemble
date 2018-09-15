@@ -22,9 +22,16 @@
               "customData": {
                 "fieldGroup": "seasonConfig"
               }
+            },
+            {
+              "name": "BlockGallery"
             }
           ],
-          "mainFooter": []
+          "mainFooter": [
+              {
+                "name": "HeroSeasonFooter"
+              }
+          ]
         }
       }
     ]
