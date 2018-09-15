@@ -1,0 +1,15 @@
+{
+  "translatableOptions": [
+
+  ],
+  "globalOptions": [
+
+  ],
+  "layout": {
+    "name": "heroSeasonFooter",
+    "label": "Hero: SeasonFooter",
+    "sub_fields": [
+      
+    ]
+  }
+}
