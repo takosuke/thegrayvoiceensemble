@@ -11,7 +11,9 @@ add_filter('Flynt/addComponentData?name=HeroSeasonHeader', function ($data) {
     });
     $data['post'] = array(
         'title' => get_the_title(),
-        'year' => get_field('year')
+        'year' => get_field('year'),
+        'group_photo' => get_field('group_photo'),
+        'youtube_video' => get_field('youtube_video')
     );
 
     return $data;

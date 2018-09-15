@@ -1,3 +1,14 @@
 <div class="flyntComponent" is="flynt-hero-season-header">
-  <h1>{{ post.year }}</h1>
+  <div class="season-header">
+    <div class="season-header__wrapper">
+      <div class="season-header__name">
+        <h1>{{ post.year }}</h1>
+        <h1>{{ post.title }}</h1>
+        <a href="#">Video</a>
+      </div>
+      <div class="season-header__image">
+        <img src="{{ post.group_photo  }}" alt="">
+      </div>
+    </div>
+  </div>
 </div>
