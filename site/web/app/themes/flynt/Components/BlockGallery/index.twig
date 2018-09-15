@@ -1,0 +1,14 @@
+<div class="flyntComponent" is="flynt-block-gallery">
+	<div class="gallery">
+		<div class="gallery-wrapper">
+		  {% for item in gallery_photos %}
+		      <div class="single-gallery-image">
+				<div class="image">
+					<img src="{{ item.src | resize(200, 115) }}" alt="{{ item.alt }}">
+					<p> {{ item.caption }} </p>
+				</div>
+		      </div>
+		  {% endfor %}
+	  </div>
+  </div>
+</div>
