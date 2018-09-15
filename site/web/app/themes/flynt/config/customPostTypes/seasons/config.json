@@ -9,7 +9,9 @@
   "labels": {
     "menu_name": "Seasons",
     "all_items": "All seasons",
-    "add_new": "Add new season"
+    "add_new": "Add new season",
+    "add_new_item": "Add new season",
+    "edit_item": "Edit season"
   },
   "supports": [
   "title"
