@@ -3,6 +3,76 @@
   "title": "Page Components",
   "fields": [
     {
+      "label": "Font",
+      "name": "font",
+      "type": "select",
+      "instructions": "Please choose one of the preselected fonts.",
+      "required": 1,
+      "wrapper": {
+        "width": "50",
+        "class": "",
+        "id": ""
+      },
+      "choices": {
+        "Avenir Next": "Avenir Next",
+        "Futura": "Futura",
+        "Letter Gothic Std": "Letter Gothic Std",
+        "SignPainter": "SignPainter",
+        "Times New Roman": "Times New Roman"
+      },
+      "default_value": [],
+      "allow_null": 0,
+      "multiple": 0,
+      "ui": 0,
+      "ajax": 0,
+      "return_format": "value",
+      "placeholder": ""
+    },
+    {
+      "label": "Font size",
+      "name": "font_size",
+      "type": "range",
+      "instructions": "Select the font size",
+      "required": 0,
+      "wrapper": {
+        "width": "50",
+        "class": "",
+        "id": ""
+      },
+      "default_value": 14,
+      "min": 5,
+      "max": 150,
+      "step": "",
+      "prepend": "",
+      "append": "pixels"
+    },
+    {
+      "label": "Font color",
+      "name": "font_color",
+      "type": "color_picker",
+      "instructions": "Choose the font color.",
+      "required": 1,
+      "wrapper": {
+        "width": "50",
+        "class": "",
+        "id": ""
+      },
+      "default_value": "#000000"
+    },
+    {
+      "label": "Background color",
+      "name": "background_color",
+      "type": "color_picker",
+      "instructions": "Pick a background color.",
+      "required": 1,
+      "wrapper": {
+        "width": "50",
+        "class": "",
+        "id": ""
+      },
+      "default_value": ""
+    },
+    {
       "name": "pageComponents",
       "label": "Page Components",
       "type": "flexible_content",
@@ -21,7 +91,7 @@
         "Flynt/Components/SliderMedia/Fields/Layout",
         "Flynt/Components/SliderPosts/Fields/Layout",
         "Flynt/Components/BlockStyleGuid/Fields/Layout",
-        "Flynt/Components/BlockSeasonYearsList/Fields/Layout"
+        "Flynt/Components/GridHomeLayout/Fields/Layout"
       ]
     }
   ],
