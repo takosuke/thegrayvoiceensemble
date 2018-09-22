@@ -1,16 +1,16 @@
 <div class="flyntComponent" is="flynt-hero-season-footer">
-	<div>
+	<div class="season-footer">
 	<p>
 	  {% for item in post.choir_members %}
 	     {% if loop.last %}
-			{{ item.name }} 
+			{{ item.name }}
 	     {% else %}
 	         {{ item.name }},
 	     {% endif %}
-	  {% endfor %}	
+	  {% endfor %}
   </p>
-</div>
-<div>
-<span> {{ post.description }}</span>
-</div>
+		<div>
+			<span> {{ post.description }}</span>
+		</div>
+	</div>
 </div>
