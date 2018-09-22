@@ -1,0 +1,25 @@
+<div class="home-content">
+	<img src="{{ image.src }}">
+
+	<div class="description">
+		<span>{{ description }}</span>
+	</div>
+
+	{% if youtube_link != '' %}
+		<div class="youtube-link">
+			<a href="{{ youtube_link }}">YouTube</a>
+		</div>
+	{% endif %}
+
+	{% if soundcloud_link != '' %}
+		<div class="soundcloud-link">
+			<a href="{{ soundcloud_link }}">SoundCloud</a>
+		</div>
+	{% endif %}
+
+	{% if contact_text != '' %}
+		<div class="contact-text">
+			<span>{{ contact_text }}</span>
+		</div>
+	{% endif %}
+</div>

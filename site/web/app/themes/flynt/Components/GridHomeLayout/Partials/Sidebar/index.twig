@@ -1,0 +1,9 @@
+<div class="sidebar">
+{% for post in posts|sort|reverse %}
+    <div>
+		<a href="{{ post.link }}">
+      		<h1>{{ post.year | date('Y') }}</h1>
+      	</a>
+    </div>
+{% endfor %}
+</div>

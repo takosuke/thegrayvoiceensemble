@@ -1,0 +1,98 @@
+{
+  "translatableOptions": [
+
+  ],
+  "globalOptions": [
+
+  ],
+  "layout": {
+    "name": "gridHomeLayout",
+    "label": "Grid: HomeLayout",
+    "sub_fields": [
+      {
+        "label": "Image",
+        "name": "image",
+        "type": "image",
+        "instructions": "",
+        "required": 1,
+        "wrapper": {
+          "width": "",
+          "class": "",
+          "id": ""
+        },
+        "return_format": "array",
+        "preview_size": "thumbnail",
+        "library": "all",
+        "min_width": "",
+        "min_height": "",
+        "min_size": "",
+        "max_width": "",
+        "max_height": "",
+        "max_size": "",
+        "mime_types": ""
+      },
+      {
+        "label": "Description",
+        "name": "description",
+        "type": "wysiwyg",
+        "instructions": "",
+        "required": 1,
+        "wrapper": {
+          "width": "",
+          "class": "",
+          "id": ""
+        },
+        "default_value": "",
+        "tabs": "visual",
+        "toolbar": "full",
+        "media_upload": 0,
+        "delay": 0
+      },
+      {
+        "label": "YouTube link",
+        "name": "youtube_link",
+        "type": "url",
+        "instructions": "",
+        "required": 0,
+        "wrapper": {
+          "width": "",
+          "class": "",
+          "id": ""
+        },
+        "default_value": "",
+        "placeholder": ""
+      },
+      {
+        "label": "SoundCloud link",
+        "name": "soundcloud_link",
+        "type": "url",
+        "instructions": "",
+        "required": 0,
+        "wrapper": {
+          "width": "",
+          "class": "",
+          "id": ""
+        },
+        "default_value": "",
+        "placeholder": ""
+      },
+      {
+        "label": "Contact text",
+        "name": "contact_text",
+        "type": "wysiwyg",
+        "instructions": "",
+        "required": 0,
+        "wrapper": {
+          "width": "",
+          "class": "",
+          "id": ""
+        },
+        "default_value": "",
+        "tabs": "visual",
+        "toolbar": "full",
+        "media_upload": 0,
+        "delay": 0
+      }
+    ]
+  }
+}
