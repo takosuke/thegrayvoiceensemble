@@ -10,6 +10,14 @@ add_action('wp_enqueue_scripts', function () {
 });
 
 add_filter('Flynt/addComponentData?name=LayoutSinglePost', function ($data) {
+
+    $data['style_options'] = array(
+        'background_color' => get_field('background_color'),
+        'font' => get_field('font'),
+        'font_color' => get_field('font_color'),
+        'font_size' => get_field('font_size')
+);
+
     $query = !empty($data['query']) ? $data['query'] : false;
     $post = Timber::get_post($query);
     if (!empty($post)) {
