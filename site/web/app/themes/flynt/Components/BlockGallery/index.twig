@@ -4,7 +4,7 @@
 		  {% for item in gallery_photos %}
 		      <div class="single-gallery-image">
 				<div class="image">
-					<img src="{{ item.src | resize(200, 115) }}" alt="{{ item.alt }}">
+					<img src="{{ item.src | resize(150, 80) }}" alt="{{ item.alt }}">
 					<p> {{ item.caption }} </p>
 				</div>
 		      </div>
