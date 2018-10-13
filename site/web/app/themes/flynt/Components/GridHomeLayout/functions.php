@@ -11,8 +11,17 @@ add_filter('Flynt/addComponentData?name=GridHomeLayout', function ($data) {
     });
 
   $data['posts'] = Timber::get_posts([
-      'post_type' => 'seasons'
+      'post_type' => 'seasons',
+      'orderby' => 'meta_value',
+      'meta_key' => 'year',
+      'order' => 'DESC'
   ]);
+  $years = [];
+   foreach ($data['posts'] as $key ) {
+    array_push($years, substr($key->year, 0, 4));
+  }
+
+  $data['counts'] = array_count_values($years);
 
     return $data;
 });
