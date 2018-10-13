@@ -15,7 +15,8 @@ add_filter('Flynt/addComponentData?name=LayoutSinglePost', function ($data) {
         'background_color' => get_field('background_color'),
         'font' => get_field('font'),
         'font_color' => get_field('font_color'),
-        'font_size' => get_field('font_size')
+        'font_size' => get_field('font_size'),
+        'line_height' => get_field('line_height')
 );
 
     $query = !empty($data['query']) ? $data['query'] : false;
