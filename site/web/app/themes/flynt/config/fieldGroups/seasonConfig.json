@@ -3,6 +3,23 @@
   "title": "Seasons Fields",
   "fields": [
     {
+        "label": "Title",
+        "name": "title",
+        "type": "wysiwyg",
+        "instructions": "The title of the season",
+        "required": 0,
+        "wrapper": {
+            "width": "",
+            "class": "",
+            "id": ""
+        },
+        "default_value": "",
+        "tabs": "visual",
+        "toolbar": "full",
+        "media_upload": 0,
+        "delay": 0
+    },
+    {
         "label": "Year",
         "name": "year",
         "type": "date_picker",

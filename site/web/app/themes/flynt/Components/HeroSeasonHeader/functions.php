@@ -10,8 +10,8 @@ add_filter('Flynt/addComponentData?name=HeroSeasonHeader', function ($data) {
         Component::enqueueAssets('HeroSeasonHeader');
     });
     $data['post'] = array(
-        'title' => get_the_title(),
         'year' => get_field('year'),
+        'title' => get_field('title'),
         'group_photo' => get_field('group_photo'),
         'youtube_video' => get_field('youtube_video')
     );
