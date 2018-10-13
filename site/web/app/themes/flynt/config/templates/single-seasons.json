@@ -24,12 +24,12 @@
               }
             },
             {
-              "name": "BlockGallery"
+              "name": "HeroSeasonFooter"
             }
           ],
           "mainFooter": [
               {
-                "name": "HeroSeasonFooter"
+                "name": "BlockGallery"
               }
           ]
         }
