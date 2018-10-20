@@ -1,14 +1,23 @@
 <div class="flyntComponent" is="flynt-block-gallery">
-	<div class="gallery">
-		<div class="gallery-wrapper">
-		  {% for item in gallery_photos %}
-		      <div class="single-gallery-image">
-				<div class="image">
-					<img src="{{ item.src | resize(136, 90) }}" alt="{{ item.alt }}">
-					<p> {{ item.caption }} </p>
-				</div>
-		      </div>
-		  {% endfor %}
-	  </div>
-  </div>
+	<section id="gallery">
+	  <div class="container">
+	    <div id="image-gallery">
+	      <div class="row">
+					{% for item in gallery_photos %}
+	        <div class="image">
+	          <div class="img-wrapper">
+	            <a href="{{ item.src }}"><img src="{{ item.src }}"></a>
+	            <div class="img-overlay">
+	              <i class="fa fa-plus-circle" aria-hidden="true"></i>
+	            </div>
+							<div class="caption" style="display: none;">
+								{{ item.caption }}
+							</div>
+	          </div>
+	        </div>
+					{% endfor %}
+	      </div><!-- End row -->
+	    </div><!-- End image gallery -->
+	  </div><!-- End container -->
+	</section>
 </div>
