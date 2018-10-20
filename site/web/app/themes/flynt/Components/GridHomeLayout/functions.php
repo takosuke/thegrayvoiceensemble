@@ -12,7 +12,7 @@ add_filter('Flynt/addComponentData?name=GridHomeLayout', function ($data) {
 
   $data['posts'] = Timber::get_posts([
       'post_type' => 'seasons',
-      'orderby' => 'meta_value',
+      'orderby' => 'meta_value_num',
       'meta_key' => 'year',
       'order' => 'DESC'
   ]);

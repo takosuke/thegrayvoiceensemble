@@ -1,5 +1,5 @@
 <div class="sidebar">
-{% for post in posts|sort|reverse %}
+{% for post in posts %}
     <div>
 		<a href="{{ post.link }}">
       		<h1>{{ post.year | date('Y') }}</h1>
