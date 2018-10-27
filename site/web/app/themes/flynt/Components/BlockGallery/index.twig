@@ -5,8 +5,8 @@
 	      <div class="row">
 					{% for item in gallery_photos %}
 	        <div class="image">
-	          <div class="img-wrapper">
-	            <a href="{{ item.src }}"><img src="{{ item.src }}"></a>
+	          <div class="img-wrapper" style="background: url({{ item.src('thumbnail') }})">
+	            <a href="{{ item.src }}"><img src="{{ item.src }}" /></a>
 	            <div class="img-overlay">
 	              <i class="fa fa-plus-circle" aria-hidden="true"></i>
 	            </div>

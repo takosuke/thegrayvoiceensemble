@@ -4,7 +4,9 @@
       <div class="season-header__name">
         <h1>{{ post.year }}</h1>
         <span>{{ post.title }}</span>
-        <a href="{{ post.youtube_video }}">Video</a>
+        {% if post.youtube_video %}
+          <a href="{{ post.youtube_video }}">Video</a>
+        {% endif %}
       </div>
       <div class="season-header__image">
         <img src="{{ post.group_photo  }}" alt="">
