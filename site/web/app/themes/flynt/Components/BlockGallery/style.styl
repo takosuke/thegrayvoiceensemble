@@ -80,20 +80,29 @@ $containerMaxWidth = lookup('$globalContainerMaxWidth') || 1140px
     color: #000
     font-size: 2em!important
     transition: opacity 0.8s
+    background: url(assets/arrow-right2.png)
+    width: 30px
+    height: 30px
+    position: absolute
+    right: 40px
+    top: 50%
     &:hover
       opacity: 0.7
-    &:before
-      content: '>'
     @media screen and (min-width: 768px)
       font-size: 3em
   #prevButton
     color: #000
     font-size: 2em!important
     transition: opacity 0.8s
+    background: url(assets/arrow-right2.png)
+    width: 30px
+    height: 30px
+    position: absolute
+    left: 40px
+    top: 50%
+    transform: rotate(180deg);
     &:hover
       opacity: 0.7
-    &:before
-      content: '<'
     @media screen and (min-width: 768px)
       font-size: 3em
   .caption
