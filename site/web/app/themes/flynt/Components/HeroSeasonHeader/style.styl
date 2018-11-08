@@ -22,6 +22,25 @@ $containerMaxWidth = lookup('$globalContainerMaxWidth') || 1140px
       span
         h1,h2
           margin: 0
+      .videoWrapper
+        position: absolute
+        width: 100%
+        height: 100%
+        top: 0
+        left: 0
+        bottom: 0
+        right: 0
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        z-index: 1
+        iframe
+          width: 100%
+          height: 100%
+        button
+          position: absolute
+          top: 0
       .video
         display: block
         margin-top: 20px

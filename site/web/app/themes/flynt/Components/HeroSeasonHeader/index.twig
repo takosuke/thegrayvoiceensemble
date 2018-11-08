@@ -4,8 +4,12 @@
       <div class="season-header__name">
         <h1>{{ post.year }}</h1>
         <span>{{ post.title }}</span>
-        {% if post.youtube_video %}
-          <a href="{{ post.youtube_video }}" target="_blank" class="video">Video</a>
+        {% if youtube_video %}
+          <div class="videoWrapper" style="display: none;">
+            <button class="exitVideo">exit</button>
+            <iframe width="1920" height="1080" src="https://www.youtube.com/embed/{{youtube_video}}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+          <a href="#" class="video">Video</a>
         {% endif %}
       </div>
       <div class="season-header__image">

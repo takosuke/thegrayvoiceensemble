@@ -9,9 +9,23 @@ class HeroSeasonHeader extends window.HTMLDivElement {
   }
 
   resolveElements () {
+    this.$video = $(".video", this)
+    this.$exitVideo = $(".exitVideo", this)
   }
 
   connectedCallback () {
+    this.ShowVideo()
+    this.HideVideo()
+  }
+  ShowVideo = () => {
+    this.$video.on('click', function(e) {
+      $(".video").prev(".videoWrapper").css("display", "flex")
+    })
+  }
+  HideVideo = () => {
+    this.$exitVideo.on('click', function(e) {
+      $(".video").prev(".videoWrapper").css("display", "none")
+    })
   }
 }
 
