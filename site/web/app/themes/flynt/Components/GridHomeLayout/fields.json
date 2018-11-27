@@ -92,6 +92,131 @@
         "toolbar": "full",
         "media_upload": 0,
         "delay": 0
+      },
+      {
+        "label": "Add year to sidebar",
+        "name": "add_year",
+        "type": "repeater",
+        "instructions": "",
+        "required": 0,
+        "wrapper": {
+          "width": "",
+          "class": "",
+          "id": ""
+        },
+        "collapsed": "",
+        "min": 0,
+        "max": 0,
+        "layout": "row",
+        "button_label": "Add year",
+        "sub_fields": [
+          {
+            "label": "Year",
+            "name": "year",
+            "type": "number",
+            "instructions": "",
+            "required": 0,
+            "wrapper": {
+              "width": "",
+              "class": "",
+              "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "min": "",
+            "max": "",
+            "step": ""
+          },
+          {
+            "label": "Year type",
+            "name": "year_type",
+            "type": "select",
+            "instructions": "Choose 'multi' for years with multiple seasons",
+            "required": 0,
+            "wrapper": {
+              "width": "30",
+              "class": "",
+              "id": ""
+            },
+            "choices": {
+              "single": "single",
+              "multi": "multi"
+            },
+            "default_value": [],
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "ajax": 0,
+            "return_format": "value",
+            "placeholder": ""
+          },
+          {
+            "label": "Single-season year",
+            "name": "single_pick",
+            "type": "relationship",
+            "instructions": "Choose only one season",
+            "required": 0,
+            "conditional_logic": [
+              [
+                {
+                  "fieldPath": "year_type",
+                  "operator": "==",
+                  "value": "single"
+                }
+              ]
+            ],
+            "wrapper": {
+              "width": "30",
+              "class": "",
+              "id": ""
+            },
+            "post_type": [
+              "seasons"
+            ],
+            "taxonomy": [],
+            "filters": [
+              "search"
+            ],
+            "elements": "",
+            "min": 1,
+            "max": 1,
+            "return_format": "object"
+          },
+          {
+            "label": "Multi-season year",
+            "name": "multi_pick",
+            "type": "relationship",
+            "instructions": "Choose multiple seasons",
+            "required": 0,
+            "conditional_logic": [
+              [
+                {
+                  "fieldPath": "year_type",
+                  "operator": "==",
+                  "value": "multi"
+                }
+              ]
+            ],
+            "wrapper": {
+              "width": "30",
+              "class": "",
+              "id": ""
+            },
+            "post_type": [
+              "seasons"
+            ],
+            "taxonomy": [],
+            "filters": [
+              "search"
+            ],
+            "elements": "",
+            "min": 2,
+            "max": "",
+            "return_format": "object"
+          }
+        ]
       }
     ]
   }

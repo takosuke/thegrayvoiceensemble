@@ -9,9 +9,19 @@ class GridHomeLayout extends window.HTMLDivElement {
   }
 
   resolveElements () {
+    this.$multi = $('.multi', this)
+    this.$show = $('.show', this)
   }
 
   connectedCallback () {
+    this.ShowMultiyYears()
+  }
+
+  ShowMultiyYears = () => {
+    this.$show.on('click', function(e) {
+      $(this).parent('.wrapper').next('.multi').slideToggle()
+      e.preventDefault()
+    })
   }
 }
 
