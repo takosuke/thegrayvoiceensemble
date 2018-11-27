@@ -15,7 +15,10 @@ add_filter('Flynt/addComponentData?name=HeroSeasonHeader', function ($data) {
         'group_photo' => get_field('group_photo')
     );
     $youtube_video = get_field('youtube_video');
-    parse_str( parse_url( $youtube_video, PHP_URL_QUERY ), $my_array_of_vars );
-    $data["youtube_video"] = $my_array_of_vars['v'];
+    if ($youtube_video) {
+      parse_str( parse_url( $youtube_video, PHP_URL_QUERY ), $my_array_of_vars );
+      $data["youtube_video"] = $my_array_of_vars['v'];
+    }
+
     return $data;
 });
